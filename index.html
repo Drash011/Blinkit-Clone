@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Clone</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media Query -->
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="javascript:void(0)">
+                    <img src="images/logo.png" alt="Blinkit Logo">
+                </a>
+            </div>
+
+            <div class="location">
+                <h4>Delivery in 10 minutes</h4>
+                <p>
+                    <i class="fas fa-location-dot"></i>
+                    Surat, Gujarat
+                </p>
+            </div>
+
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search for products...">
+            </div>
+
+            <div class="nav-actions">
+
+                <button id="themeBtn">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button class="login-btn">
+                    Login
+                </button>
+
+                <button class="cart-btn">
+                    <i class="fas fa-cart-shopping"></i>
+                    Cart
+                    <span id="cartCount">0</span>
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>India's Last Minute App</h1>
+
+                <p>
+                    Groceries, snacks, fruits,
+                    vegetables and more delivered
+                    to your doorstep in minutes.
+                </p>
+
+                <button>
+                    Shop Now
+                </button>
+            </div>
+
+            <div class="hero-image">
+                <i class="fas fa-basket-shopping"></i>
+            </div>
+
+        </section>
+
+        <!-- Categories -->
+        <div class="container">
+            <section class="categories-section">
+
+                <div class="category-item">
+                    <img src="images/catagories-1.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-2.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-3.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-4.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-5.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-6.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-7.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-8.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-9.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-10.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-11.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-12.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-13.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-14.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-15.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-16.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-17.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-18.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-19.jpeg">
+                </div>
+
+                <div class="category-item">
+                    <img src="images/catagories-20.jpeg">
+                </div>
+            </section>
+        </div>
+
+        <!-- Product Section -->
+        <!-- Dairy Products -->
+        <section class="product-section">
+
+            <div class="section-header">
+
+                <h2>Dairy, Bread & Eggs</h2>
+
+                <a href="#">see all</a>
+
+            </div>
+
+            <button class="scroll-btn left" onclick="scrollProducts('dairyProducts',-400)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="products-slider" id="dairyProducts">
+
+                <!-- Product Card 1 -->
+                <div class="product-card">
+
+                    <img src="images/amul-gold.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Gold Full Cream Milk</h3>
+
+                    <p>1 ltr</p>
+
+                    <div class="price-row">
+
+                        <span>₹72</span>
+
+                        <button class="add-cart" data-name="Amul Gold Full Cream Milk" data-price="72"
+                            data-weight="1 ltr" data-image="images/amul-gold.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+
+                    <img src="images/amul-taaza.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Taaza Toned Milk</h3>
+
+                    <p>500 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹29</span>
+
+                        <button class="add-cart" data-name="Amul Taaza Toned Milk" data-price="29" data-weight="500 ml"
+                            data-image="images/amul-taaza.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+
+                    <img src="images/amul-cheese.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Cheese Block</h3>
+
+                    <p>200 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹129</span>
+
+                        <button class="add-cart" data-name="Amul Cheese Block" data-price="129" data-weight="200 g"
+                            data-image="images/amul-cheese.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+
+                    <img src="images/amul-cup-curd.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Masti Cup Curd</h3>
+
+                    <p>200 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹25</span>
+
+                        <button class="add-cart" data-name="Amul Masti Cup Curd" data-price="25" data-weight="200 g"
+                            data-image="images/amul-cup-curd.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+
+                    <img src="images/amul-salted-butter.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Salted Butter</h3>
+
+                    <p>100 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹60</span>
+
+                        <button class="add-cart" data-name="Amul Salted Butter" data-price="60" data-weight="100 g"
+                            data-image="images/amul-salted-butter.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+
+                    <img src="images/amul-pouch-curd.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Masti Pouch Curd</h3>
+
+                    <p>1 kg</p>
+
+                    <div class="price-row">
+
+                        <span>₹80</span>
+
+                        <button class="add-cart" data-name="Amul Masti Pouch Curd" data-price="80" data-weight="1 kg"
+                            data-image="images/amul-pouch-curd.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+
+                    <img src="images/amul-cheese-cubes.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Cheese Cubes</h3>
+
+                    <p>200 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹135</span>
+
+                        <button class="add-cart" data-name="Amul Cheese Cubes" data-price="135" data-weight="200 g"
+                            data-image="images/amul-cheese-cubes.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+
+                    <img src="images/amul-diced-cheese.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Blend Diced Cheese</h3>
+
+                    <p>200 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹125</span>
+
+                        <button class="add-cart" data-name="Amul Blend Diced Cheese" data-price="125"
+                            data-weight="200 g" data-image="images/amul-diced-cheese.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollProducts('dairyProducts',400)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Snacks & Munchies Products -->
+        <section class="product-section">
+
+            <div class="section-header">
+
+                <h2>Snacks & Munchies</h2>
+
+                <a href="#">see all</a>
+
+            </div>
+
+            <button class="scroll-btn left" onclick="scrollProducts('snacksProducts',-400)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="products-slider" id="snacksProducts">
+
+                <!-- Product Card 1 -->
+                <div class="product-card">
+
+                    <img src="images/protein-coated-peanuts.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Protein Chef Baked Coated Peanuts</h3>
+
+                    <p>50 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹70</span>
+
+                        <button class="add-cart" data-name="Protein Chef Baked Coated Peanuts" data-price="70"
+                            data-weight="50 g" data-image="images/protein-coated-peanuts.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+
+                    <img src="images/red-rocked-chips.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Red Rock Deli Baked Chips</h3>
+
+                    <p>53 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹60</span>
+
+                        <button class="add-cart" data-name="Red Rock Deli Baked Chips" data-price="60"
+                            data-weight="53 g" data-image="images/red-rocked-chips.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+
+                    <img src="images/dark-chocolate-breadsticks.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Beanly Dark Chocolate Spread with Breadsticks</h3>
+
+                    <p>52 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹133</span>
+
+                        <button class="add-cart" data-name="Beanly Dark Chocolate Spread with Breadsticks"
+                            data-price="133" data-weight="52 g" data-image="images/dark-chocolate-breadsticks.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+
+                    <img src="images/kabs-cheese-balls.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Kab's Jackpot Cheese Balls</h3>
+
+                    <p>60 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹65</span>
+
+                        <button class="add-cart" data-name="Kab's Jackpot Cheese Balls" data-price="65"
+                            data-weight="60 g" data-image="images/kabs-cheese-balls.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+
+                    <img src="images/ragi-chips.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Lo Foods Gluten Free Millet Ragi Chips</h3>
+
+                    <p>75 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹99</span>
+
+                        <button class="add-cart" data-name="Lo Foods Gluten Free Millet Ragi Chips" data-price="99"
+                            data-weight="75 g" data-image="images/ragi-chips.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+
+                    <img src="images/crunchy-soya-sticks.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Protein Chef Double Protein Crunchy Soya Sticks</h3>
+
+                    <p>65 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹69</span>
+
+                        <button class="add-cart" data-name="Protein Chef Double Protein Crunchy Soya Sticks"
+                            data-price="69" data-weight="65 g" data-image="images/crunchy-soya-sticks.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+
+                    <img src="images/jakpot-chilli-crips.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Kab's Jackpot Chilli Lemon Stix Crisps</h3>
+
+                    <p>80 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹65</span>
+
+                        <button class="add-cart" data-name="Kab's Jackpot Chilli Lemon Stix Crisps" data-price="65"
+                            data-weight="80 g" data-image="images/jakpot-chilli-crips.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+
+                    <img src="images/deli-poped-chips.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Red Rock Deli Popped Chips</h3>
+
+                    <p>75 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹125</span>
+
+                        <button class="add-cart" data-name="Red Rock Deli Popped Chips" data-price="125"
+                            data-weight="75 g" data-image="images/deli-poped-chips.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollProducts('snacksProducts',400)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Cold Drinks & Juices -->
+        <section class="product-section">
+
+            <div class="section-header">
+
+                <h2>Cold Drinks & Juices</h2>
+
+                <a href="#">see all</a>
+
+            </div>
+
+            <button class="scroll-btn left" onclick="scrollProducts('drinkProducts',-400)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="products-slider" id="drinkProducts">
+
+                <!-- Product Card 1 -->
+                <div class="product-card">
+
+                    <img src="images/ices-cubes.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Sparkling Ice Cubes by Burrf</h3>
+
+                    <p>1 kg</p>
+
+                    <div class="price-row">
+
+                        <span>₹80</span>
+
+                        <button class="add-cart" data-name="Sparkling Ice Cubes by Burrf" data-price="80"
+                            data-weight="1 kg" data-image="images/ices-cubes.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+
+                    <img src="images/thumpsup-drink.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Thums Up Soft Drink</h3>
+
+                    <p>150 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹40</span>
+
+                        <button class="add-cart" data-name="Thums Up Soft Drink" data-price="40" data-weight="150 ml"
+                            data-image="images/thumpsup-drink.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+
+                    <img src="images/diet-cock.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Coca-Cola Diet Coke Soft Drink</h3>
+
+                    <p>300 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹40</span>
+
+                        <button class="add-cart" data-name="Coca-Cola Diet Coke Soft Drink" data-price="40"
+                            data-weight="300 ml" data-image="images/diet-cock.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+
+                    <img src="images/red-bull.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Red Bull Energy Drink</h3>
+
+                    <p>250 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹125</span>
+
+                        <button class="add-cart" data-name="Red Bull Energy Drink" data-price="125" data-weight="250 ml"
+                            data-image="images/red-bull.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+
+                    <img src="images/maaza.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Maaza Mango Drink</h3>
+
+                    <p>600 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹35</span>
+
+                        <button class="add-cart" data-name="Maaza Mango Drink" data-price="35" data-weight="600 ml"
+                            data-image="images/maaza.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+
+                    <img src="images/monster.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Monster Zero Sugar Ultra Energy Drink</h3>
+
+                    <p>350 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹112</span>
+
+                        <button class="add-cart" data-name="Monster Zero Sugar Ultra Energy Drink" data-price="112"
+                            data-weight="350 ml" data-image="images/monster.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+
+                    <img src="images/bisleri.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Bisleri Packaged Water</h3>
+
+                    <p>1 ltr</p>
+
+                    <div class="price-row">
+
+                        <span>₹20</span>
+
+                        <button class="add-cart" data-name="Bisleri Packaged Water" data-price="20" data-weight="1 ltr"
+                            data-image="images/bisleri.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+
+                    <img src="images/amul-buttermilk.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Amul Masti Spiced Salted Buttermilk</h3>
+
+                    <p>200 ml</p>
+
+                    <div class="price-row">
+
+                        <span>₹15</span>
+
+                        <button class="add-cart" data-name="Amul Masti Spiced Salted Buttermilk" data-price="15"
+                            data-weight="200 ml" data-image="images/amul-buttermilk.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollProducts('drinkProducts',400)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Sweet Tooth -->
+        <section class="product-section">
+
+            <div class="section-header">
+
+                <h2>Sweet Tooth</h2>
+
+                <a href="#">see all</a>
+
+            </div>
+
+            <button class="scroll-btn left" onclick="scrollProducts('sweetProducts',-400)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="products-slider" id="sweetProducts">
+
+                <!-- Product Card 1 -->
+                <div class="product-card">
+
+                    <img src="images/dairy-milk-silk.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Cadbury Dairy Milk Silk Chocolate Bar</h3>
+
+                    <p>137 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹204</span>
+
+                        <button class="add-cart" data-name="Cadbury Dairy Milk Silk Ganache Milk Chocolate Bar"
+                            data-price="204" data-weight="137 g" data-image="images/dairy-milk-silk.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+
+                    <img src="images/kitkat.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Nestle KitKat Choco Coated Wafer Bar</h3>
+
+                    <p>38.5 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹35</span>
+
+                        <button class="add-cart" data-name="Nestle KitKat Choco Coated Wafer Bar" data-price="35"
+                            data-weight="38.5 g" data-image="images/kitkat.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+
+                    <img src="images/munch.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Nestle Munch Max Crunchy Wafer Bar</h3>
+
+                    <p>38.5 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹20</span>
+
+                        <button class="add-cart" data-name="Nestle Munch Max Crunchy Wafer Bar" data-price="20"
+                            data-weight="38.5 g" data-image="images/munch.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+
+                    <img src="images/dairy-milk.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Cadbury Dairy Milk</h3>
+
+                    <p>112 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹110</span>
+
+                        <button class="add-cart" data-name="Cadbury Dairy Milk" data-price="110" data-weight="112 g"
+                            data-image="images/dairy-milk.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+
+                    <img src="images/bornville.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Bournville Fruit & Nut Dark Chocolate </h3>
+
+                    <p>75 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹130</span>
+
+                        <button class="add-cart" data-name="Bournville Fruit & Nut Dark Chocolate " data-price="130"
+                            data-weight="75 g" data-image="images/bornville.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+
+                    <img src="images/kitkat-hazelnut.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>KitKat Delights Hazelnut Chocolate</h3>
+
+                    <p>120 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹120</span>
+
+                        <button class="add-cart" data-name="KitKat Delights Hazelnut Wafer Chocolate" data-price="120"
+                            data-weight="120 g" data-image="images/kitkat-hazelnut.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card">
+
+                    <img src="images/dark-fantacy.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Dark Fantasy Creme Wafer Roll</h3>
+
+                    <p>180 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹112</span>
+
+                        <button class="add-cart" data-name="Dark Fantasy Creme Wafer Roll" data-price="112"
+                            data-weight="180 g" data-image="images/dark-fantacy.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card">
+
+                    <img src="images/dlite-dark-chocolate.avif">
+
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        8 MINS
+                    </div>
+
+                    <h3>Sugar Free D'Lite Dark Chocolate Bar</h3>
+
+                    <p>40 g</p>
+
+                    <div class="price-row">
+
+                        <span>₹78</span>
+
+                        <button class="add-cart" data-name="Sugar Free D'Lite Dark Chocolate Bar" data-price="78"
+                            data-weight="40 g" data-image="images/dlite-dark-chocolate.avif">
+                            ADD
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-btn right" onclick="scrollProducts('sweetProducts',400)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </section>
+
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar" id="cartSidebar">
+
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+
+                <button id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="delivery-card">
+
+                <i class="fas fa-clock"></i>
+
+                <div>
+
+                    <h3>Delivery in 8 minutes</h3>
+
+                    <p>Shipment of your items</p>
+
+                </div>
+
+            </div>
+
+            <div id="cartItems"></div>
+
+            <div class="bill-details">
+
+                <h3>Bill Details</h3>
+
+                <div>
+                    Items Total
+                    <span id="itemsTotal">₹0</span>
+                </div>
+
+                <div>
+                    Delivery Charge
+                    <span>₹25</span>
+                </div>
+
+                <div>
+                    Handling Charge
+                    <span>₹2</span>
+                </div>
+
+                <hr>
+
+                <div>
+                    Grand Total
+                    <span id="grandTotal">₹0</span>
+                </div>
+
+            </div>
+
+            <div class="cart-footer">
+                <h3>
+                    Total: ₹<span id="cartTotal">0</span>
+                </h3>
+
+                <button class="checkout-btn">
+                    Checkout
+                </button>
+            </div>
+
+        </div>
+
+        <div class="cart-overlay" id="cartOverlay"></div>
+
+        <div class="toast"></div>
+
+        <!-- Order Modal -->
+        <div class="order-modal" id="orderModal">
+
+            <div class="order-box">
+
+                <i class="fas fa-circle-check"></i>
+
+                <h2>Order Placed Successfully!</h2>
+
+                <p>
+                    Your groceries will arrive in
+                    10 minutes.
+                </p>
+
+                <button id="closeOrderModal">
+                    Continue Shopping
+                </button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="useful-links">
+                <h3>Useful Links</h3>
+
+                <div class="links-grid">
+                    <ul>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="javascript:void(0)">Privacy</a></li>
+                        <li><a href="javascript:void(0)">Terms</a></li>
+                        <li><a href="javascript:void(0)">FAQs</a></li>
+                        <li><a href="javascript:void(0)">Security</a></li>
+                        <li><a href="javascript:void(0)">Contact</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">Partner</a></li>
+                        <li><a href="javascript:void(0)">Franchise</a></li>
+                        <li><a href="javascript:void(0)">Seller</a></li>
+                        <li><a href="javascript:void(0)">Warehouse</a></li>
+                        <li><a href="javascript:void(0)">Deliver</a></li>
+                        <li><a href="javascript:void(0)">Resources</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">Recipes</a></li>
+                        <li><a href="javascript:void(0)">Bistro</a></li>
+                        <li><a href="javascript:void(0)">District</a></li>
+                        <li><a href="javascript:void(0)">Blinkit Ambulance</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="category-heading">
+                    <h3>Categories</h3>
+                    <a href="#">see all</a>
+                </div>
+
+                <div class="category-grid">
+                    <ul>
+                        <li><a href="javascript:void(0)">Vegetables & Fruits</a></li>
+                        <li><a href="javascript:void(0)">Cold Drinks & Juices</a></li>
+                        <li><a href="javascript:void(0)">Bakery & Biscuits</a></li>
+                        <li><a href="javascript:void(0)">Dry Fruits, Masala & Oil</a></li>
+                        <li><a href="javascript:void(0)">Paan Corner</a></li>
+                        <li><a href="javascript:void(0)">Pharma & Wellness</a></li>
+                        <li><a href="javascript:void(0)">Personal Care</a></li>
+                        <li><a href="javascript:void(0)">Kitchen & Dining</a></li>
+                        <li><a href="javascript:void(0)">Stationery Needs</a></li>
+                        <li><a href="javascript:void(0)">Print Store</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">Dairy & Breakfast</a></li>
+                        <li><a href="javascript:void(0)">Instant & Frozen Food</a></li>
+                        <li><a href="javascript:void(0)">Sweet Tooth</a></li>
+                        <li><a href="javascript:void(0)">Sauces & Spreads</a></li>
+                        <li><a href="javascript:void(0)">Organic & Premium</a></li>
+                        <li><a href="javascript:void(0)">Cleaning Essentials</a></li>
+                        <li><a href="javascript:void(0)">Pet Care</a></li>
+                        <li><a href="javascript:void(0)">Fashion & Accessories</a></li>
+                        <li><a href="javascript:void(0)">Books</a></li>
+                        <li><a href="javascript:void(0)">E-Gift Cards</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="javascript:void(0)">Munchies</a></li>
+                        <li><a href="javascript:void(0)">Tea, Coffee & Milk Drinks</a></li>
+                        <li><a href="javascript:void(0)">Atta, Rice & Dal</a></li>
+                        <li><a href="javascript:void(0)">Chicken, Meat & Fish</a></li>
+                        <li><a href="javascript:void(0)">Baby Care</a></li>
+                        <li><a href="javascript:void(0)">Home Furnishing & Decor</a></li>
+                        <li><a href="javascript:void(0)">Beauty & Cosmetics</a></li>
+                        <li><a href="javascript:void(0)">Electronics & Electricals</a></li>
+                        <li><a href="javascript:void(0)">Toys & Games</a></li>
+                        <li><a href="javascript:void(0)">Rakhi Gifts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-middle">
+            <p>© Blink Commerce Private Limited, 2016-2026</p>
+
+            <div class="app-download">
+                <h4>Download App</h4>
+
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="App Store" height="36">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Play Store" height="36">
+            </div>
+
+            <div class="social-icons">
+                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="javascript:void(0)"><i class="fa-brands fa-threads"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                “Blinkit” is owned & managed by "Blink Commerce Private Limited"
+                and is not related, linked or interconnected in whatsoever manner
+                or nature, to “GROFFR.COM” which is a real estate services
+                business operated by “Redstone Consultancy Services Private Limited”.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
