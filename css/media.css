@@ -1,0 +1,160 @@
+/* TABLET RESPONSIVE */
+@media(max-width:992px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-box {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        font-size: 120px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .section {
+        width: 95%;
+    }
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
+
+    .hero-image {
+        font-size: 90px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .nav-actions {
+        gap: 10px;
+    }
+
+    .cart-btn {
+        padding: 10px 14px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer h3 {
+        font-size: 28px;
+    }
+
+    .links-grid,
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-download {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* SMALL MOBILE */
+@media(max-width:480px) {
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-image {
+        font-size: 70px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .category {
+        padding: 20px 10px;
+    }
+
+    .category i {
+        font-size: 35px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .price-row span {
+        font-size: 18px;
+    }
+
+    .add-cart {
+        padding: 8px 14px;
+    }
+}
